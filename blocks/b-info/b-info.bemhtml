@@ -5,7 +5,7 @@ block b-info {
             elem: 'logo',
             content: {
                 block: 'b-image',
-                url: 'blocks/b-image/b-image__yandex_lang_' + this.ctx.lang + '.png'
+                url: '../../blocks/b-image/b-image__yandex_lang_' + this.ctx.lang + '.png'
             }
         },
         {
@@ -146,6 +146,7 @@ block b-info {
                 content: [
                     this.ctx.info.person.email ? [{ elem: 'email', content: this.ctx.info.person.email }, { tag: 'br' }] : '',
                     this.ctx.info.person.github ? [{ elem: 'github', content: this.ctx.info.person.github }, { tag: 'br' }] : '',
+                    this.ctx.info.person.twitter ? [{ elem: 'twitter', content: this.ctx.info.person.twitter }, { tag: 'br' }] : '',
                     this.ctx.info.person.skype ? [{ elem: 'skype', lang: this.ctx.lang, content: this.ctx.info.person.skype }] : ''
                 ]
             }
@@ -176,6 +177,13 @@ block b-info {
         cls: 'email',
         attrs: { href: 'mailto:' + this.ctx.content },
         content: this.ctx.content
+    }
+
+    elem twitter {
+        tag: 'a',
+        cls: 'twitter',
+        attrs: { href: 'https://twitter.com/' + this.ctx.content },
+        content: 'twitter.com/' + this.ctx.content
     }
 
     elem github {
