@@ -23,7 +23,6 @@
                         locality: 'Симферополь',
                         zip: '95000',
                         address: 'ул. Казанская, д. 1а',
-                        phone: '+38 (048) 737-44-10',
                         site: 'www.yandex.ua'
                     },
                     person: {
@@ -46,7 +45,6 @@
                         locality: 'Simferopol',
                         zip: '95000',
                         address: 'Kazanskaya St., 1а',
-                        phone: '+38 (048) 737-44-10',
                         site: 'www.yandex.com'
                     },
                     person: {
