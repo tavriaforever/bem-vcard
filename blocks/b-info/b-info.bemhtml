@@ -147,6 +147,7 @@ block b-info {
                     this.ctx.info.person.email ? [{ elem: 'email', content: this.ctx.info.person.email }, { tag: 'br' }] : '',
                     this.ctx.info.person.github ? [{ elem: 'github', content: this.ctx.info.person.github }, { tag: 'br' }] : '',
                     this.ctx.info.person.twitter ? [{ elem: 'twitter', content: this.ctx.info.person.twitter }, { tag: 'br' }] : '',
+                    this.ctx.info.person.habr ? [{ elem: 'habr', content: this.ctx.info.person.habr }, { tag: 'br' }] : '',
                     this.ctx.info.person.skype ? [{ elem: 'skype', lang: this.ctx.lang, content: this.ctx.info.person.skype }] : ''
                 ]
             }
@@ -174,22 +175,25 @@ block b-info {
 
     elem email {
         tag: 'a',
-        cls: 'email',
         attrs: { href: 'mailto:' + this.ctx.content },
         content: this.ctx.content
     }
 
     elem twitter {
         tag: 'a',
-        cls: 'twitter',
-        attrs: { href: 'https://twitter.com/' + this.ctx.content },
+        attrs: { href: 'https://twitter.com/' + this.ctx.content, target: '_blank' },
         content: 'twitter.com/' + this.ctx.content
+    }
+
+    elem habr {
+        tag: 'a',
+        attrs: { href: 'http://habrahabr.ru/users/' + this.ctx.content, target: '_blank' },
+        content: 'habrahabr.ru/' + this.ctx.content
     }
 
     elem github {
         tag: 'a',
-        cls: 'github',
-        attrs: { href: 'https://github.com/' + this.ctx.content },
+        attrs: { href: 'https://github.com/' + this.ctx.content, target: '_blank' },
         content: 'github.com/' + this.ctx.content
     }
 
