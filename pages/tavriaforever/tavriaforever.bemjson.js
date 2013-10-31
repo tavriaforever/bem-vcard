@@ -17,17 +17,16 @@
                 lang: 'ru',
                 info: {
                     name: 'Николай Ильченко',
-                    position: 'Разработчик интерфейсов<br>группа разработки общепортальной библиотеки',
+                    about: 'С 2013 года работаю фронтэнд-разработчиком в компании Яндекс',
                     company: {
                         country: 'Украина',
                         locality: 'Симферополь',
                         zip: '95000',
-                        address: 'ул. Казанская, д. 1а',
-                        site: 'www.yandex.ua'
+                        address: 'ул. Казанская, 1а',
+                        site: 'www.yandex.ru'
                     },
                     person: {
-                        email: 'tavria@yandex-team.ru',
-                        cellular: '+38 (050) 020-93-95',
+                        email: 'yndx.tavria@yandex.ru',
                         github: 'tavriaforever',
                         twitter: 'tavriaforever',
                         habr: 'tavriaforever'
@@ -38,8 +37,8 @@
                 block: 'b-card-layout',
                 lang: 'en',
                 info: {
-                    name: 'Nikolai Ilchenko',
-                    position: 'Interface developer<br>group of development of all-portal library',
+                    name: 'Nikolay Ilchenko',
+                    about: 'Frontend developer in the Yandex company',
                     company: {
                         country: 'Ukraine',
                         locality: 'Simferopol',
@@ -48,13 +47,18 @@
                         site: 'www.yandex.com'
                     },
                     person: {
-                        email: 'tavria@yandex-team.ru',
-                        cellular: '+38 (050) 020-93-95',
+                        email: 'yndx.tavria@yandex.ru',
                         github: 'tavriaforever',
                         twitter: 'tavriaforever',
                         habr: 'tavriaforever'
                     }
                 }
+            },
+            {
+                block: 'b-powered',
+                tag: 'a',
+                attrs: { href: 'bem.info' },
+                content: 'Built with BEM'
             }
         ]
     }

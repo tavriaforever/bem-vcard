@@ -27,8 +27,8 @@ block b-info {
                         content: this.ctx.info.name
                     },
                     {
-                        elem: 'position',
-                        content: this.ctx.info.position
+                        elem: 'about',
+                        content: this.ctx.info.about
                     }
                 ]
             },
@@ -159,9 +159,9 @@ block b-info {
         cls: 'fn'
     }
 
-    elem position {
-        tag: 'strong',
-        cls: 'role'
+    elem about {
+        tag: 'p',
+        cls: 'about'
     }
 
     elem company, tag: 'p'

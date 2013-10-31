@@ -1,0 +1,21 @@
+.b-powered
+{
+    background: url(../../blocks/b-powered/b-powered.png) no-repeat;
+
+    position: absolute;
+    left: 39px;
+    top: 212px;
+
+    padding: 30px 25px 0 0;
+
+    z-index: 2;
+
+    color: #000;
+    text-decoration: none;
+}
+
+.b-powered:hover
+{
+    color: #f00;
+    text-decoration: underline;
+}
