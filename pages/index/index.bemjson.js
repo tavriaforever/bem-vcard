@@ -1,11 +1,11 @@
 ({
     block: 'b-page',
-    title: 'Николай Ильченко / Nikolai Ilchenko — tavria@yandex-team.ru',
+    title: 'Николай Ильченко — yndx.tavria@yandex.ru',
     favicon: '/favicon.ico',
     head: [
-        { elem: 'css', url: 'tavriaforever.css' },
+        { elem: 'css', url: 'index.css' },
         { block: 'i-jquery', elem: 'core' },
-        { elem: 'js', url: 'tavriaforever.js' }
+        { elem: 'js', url: 'index.js' }
     ],
     i18n: { langs: ['ru', 'en'], lang: 'ru' },
     content: {
@@ -17,12 +17,8 @@
                 lang: 'ru',
                 info: {
                     name: 'Николай Ильченко',
-                    about: 'С 2013 года работаю фронтэнд-разработчиком в компании Яндекс',
+                    about: 'Фронтэнд-разработчик. С 2013 года работаю в Яндексе. Нравится выбранная профессия, люди с юмором и всевозможные «rocket science» штуки.',
                     company: {
-                        country: 'Украина',
-                        locality: 'Симферополь',
-                        zip: '95000',
-                        address: 'ул. Казанская, 1а',
                         site: 'www.yandex.ru'
                     },
                     person: {
@@ -38,12 +34,8 @@
                 lang: 'en',
                 info: {
                     name: 'Nikolay Ilchenko',
-                    about: 'Frontend developer in the Yandex company',
+                    about: 'Frontend developer. Since 2013 I work in Yandex. The chosen profession, people with humour and various "rocket science" of piece is pleasant.',
                     company: {
-                        country: 'Ukraine',
-                        locality: 'Simferopol',
-                        zip: '95000',
-                        address: 'Kazanskaya St., 1а',
                         site: 'www.yandex.com'
                     },
                     person: {
@@ -57,7 +49,7 @@
             {
                 block: 'b-powered',
                 tag: 'a',
-                attrs: { href: 'bem.info' },
+                attrs: { href: 'http://bem.info' },
                 content: 'Built with BEM'
             }
         ]
