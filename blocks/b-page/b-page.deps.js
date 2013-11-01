@@ -11,7 +11,7 @@
         },
         {
             block: 'i-font',
-            mods: { face: 'textbook-new' }
+            mods: { face: 'alsekibastuz' }
         }
     ]
 })

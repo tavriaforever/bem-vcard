@@ -5,7 +5,7 @@ block b-info {
             elem: 'logo',
             content: {
                 block: 'b-image',
-                url: '../../blocks/b-image/b-image__yandex_lang_' + this.ctx.lang + '.png'
+                url: 'images/b-image__yandex_lang_' + this.ctx.lang + '.png'
             }
         },
         {
@@ -42,25 +42,23 @@ block b-info {
                             (this.ctx.lang == 'ru')
                                 ? [
                                     { tag: 'span', cls: 'country-name', content: this.ctx.info.company.country },
-                                    ', ',
+                                    ' ',
                                     { tag: 'span', cls: 'locality', content: this.ctx.info.company.locality },
-                                    ', ',
+                                    ' ',
                                     { tag: 'span', cls: 'postal-code', content: this.ctx.info.company.zip }
                                 ]
                                 : [
                                     { tag: 'span', cls: 'locality', content: this.ctx.info.company.locality },
                                     ' ',
                                     { tag: 'span', cls: 'postal-code', content: this.ctx.info.company.zip },
-                                    ', ',
+                                    ' ',
                                     { tag: 'span', cls: 'country-name', content: this.ctx.info.company.country }
                                 ],
-                            { tag: 'br' },
                             {
                                 tag: 'span',
                                 cls: 'street-address',
                                 content: this.ctx.info.company.address
-                            },
-                            { tag: 'br' }
+                            }
                         ]
                     },
 

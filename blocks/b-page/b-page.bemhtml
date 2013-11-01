@@ -36,7 +36,7 @@ block b-page {
                             this.ctx,
                             {
                                 block: 'i-font',
-                                mods: { face: 'textbook-new' }
+                                mods: { face: 'alsekibastuz' }
                             }
                         ],
                         content: this.ctx.content
